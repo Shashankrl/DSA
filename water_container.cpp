@@ -1,6 +1,3 @@
-// C++ Program to find the maximum amount of water in the 
-// container using Two Pointer Technique
-
 #include <vector>
 #include <iostream>
 using namespace std;
@@ -10,8 +7,7 @@ int maxWater(vector<int> &arr) {
     int res = 0;
     while(left < right) {
         
-        // Find the water stored in the container between 
-        // arr[left] and arr[right]
+    
         int water = min(arr[left], arr[right]) * (right - left);
         res = max(res, water);
       
